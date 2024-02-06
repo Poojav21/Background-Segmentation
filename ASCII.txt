@@ -1,0 +1,18 @@
+### Assigning initial parameters
+
+alpha_value = 0.01 #Learning rate
+# Previosly Experimented with the learning rate=0.1 which resulted into fast model adaption 
+    # while when we set the learning rate =0.001,it slow down the algorithm learning
+
+T_min_portion_background = 0.7 # Threshold value for background accountation
+# T parameter determines sensitivity of the algorithm in detecting changes in video frames. 
+# If we setting T to 0.1(just for comparison), we're getting false detection of moving object
+# because most of the objects in the background are becoming part of foreground.
+# If we set T to high as 0.9, 90% of the frame will be the part of the background and we're getting wrong detection.
+
+
+K = 3 # No. of Gaussians(Taking 3 because for gray level it is the best no. of gaussian(by experimentation) and less no. of gaussians will also reduce the complexity of algorithm as we 
+# we're computing all the parameters for each frame corresponding to each gaussian)
+w =0.30, 0.35, 0.35 # Prior probability for all 3 gaussians with summation=1
+covariance = 5 # (Defining low initially)
+# If the variance is too high then the ratio w/sigma will low , in that case most of the objects will be the part of the forground, and if variance is too low in that case the ratio w/sigma will be high in that case most of the objects will be considered as background object.
