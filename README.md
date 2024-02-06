@@ -1,4 +1,5 @@
-Use the idea of motion segmentation, from the papers below. To segment out the foreground, you may use the Sequential Labelling algorithm. Or K-Means, for that matter. Please generate two videos (in terms of the frames, and the video file as well) -
+Using the idea of motion segmentation, from the papers below. To segment out the foreground, and background objects 
+Generated two videos -
 the background, and one with the foreground objects
 
 C. Stauffer, W. E. L. Grimson. Adaptive Background Mixture Models for Real-Time Tracking. Proc. IEEE Computer Society Conference on Computer Vision and Pattern Recognition, vol. 2, pp. 246 - 252, 1999.
