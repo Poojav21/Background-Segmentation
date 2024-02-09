@@ -1,4 +1,6 @@
 Using the idea of motion segmentation, from the papers below. To segment out the foreground, and background objects 
+
+
 Generated two videos -
 the background, and one with the foreground objects
 
